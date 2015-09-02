@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- 选中后 state_window_focused 9d , state_enabled 9e ,  state_multiline 34d , state_checked a0 -->
+    <!-- 未选中且失去焦点 state_window_focused 9d , state_enabled 9e ,  state_multiline 34d  -->
+    <!-- 按下状态 state_window_focused 9d , state_enabled 9e , state_pressed a7 ,  state_multiline 34d , state_checked a0 -->
+    <!-- @drawable/radio_ring_selected  @android:color/white @drawable/radio_ring_blue -->
+    
+    <!-- 严格需要注意到是  按下的时候，同时会选中，要在按键弹起后用不同的样式区分就需要严格判断是否是按下状态 即
+     state_checked 和 state_pressed 需要同时约束，且否定在前-->
+    <item  
+        android:state_checked="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/radio_ring_blue" />
+    
+    <item  
+        android:state_pressed="true"
+        android:drawable="@drawable/radio_ring_selected" />
+    
+    <item 
+         android:drawable="@drawable/radio_ring_grey" />
+    
+    <!-- <item android:state_checked="true" android:drawable="@drawable/radio_ring_selected" />
+    
+    <item android:drawable="@drawable/radio_ring_grey" /> -->
+    
+    <!-- <item android:state_pressed="true"
+          android:drawable="@drawable/radio_ring_grey" />
+    <item android:state_pressed="false"
+          android:drawable="@drawable/radio_ring_selected" /> -->
+    
+    <!-- <item android:state_checked="false" android:drawable="@drawable/radio_ring_selected" />
+    <item android:state_checked="true" android:drawable="@drawable/radio_ring_grey" /> -->
+    
+</selector>
+
+ <!-- 行车记录界面分辨率、时间选择 -->

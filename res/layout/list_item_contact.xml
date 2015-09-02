@@ -1,0 +1,38 @@
+<com.spt.carengine.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_listitem_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 这层需要嵌套 -->
+
+    <com.spt.carengine.view.PercentLinearLayout
+        android:id="@+id/subject_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#264962"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/Call_contact_item"
+            app:layout_marginLeftPercent="2.89%w"
+            app:layout_textSizePercent="30%h" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/Call_contact_item"
+            app:layout_textSizePercent="30%h"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_item_dial"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="20%w"
+            android:background="@drawable/select_btn_bt_item_dial" />
+    </com.spt.carengine.view.PercentLinearLayout>
+
+</com.spt.carengine.view.PercentLinearLayout>

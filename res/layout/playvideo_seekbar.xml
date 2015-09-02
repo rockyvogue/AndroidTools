@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playvideo_progress_overlay_id"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/playvideo_time_progress_track_bg"
+    android:layout_above="@+id/playvideo_overlay_bottom_rl"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <TextView
+        android:id="@+id/playvideo_used_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="@string/video_default_time" />
+
+    <TextView
+        android:id="@+id/playvideo_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/video_default_time" />
+
+    <SeekBar
+        android:id="@+id/playvideo_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@+id/playvideo_used_time"
+        android:layout_toLeftOf="@+id/playvideo_total_time"
+        android:layout_toRightOf="@+id/playvideo_used_time"
+        android:layout_toStartOf="@+id/playvideo_total_time"
+        android:max="1000"
+        android:thumbOffset="0.0dp" 
+        android:maxHeight="10dp"
+        android:minHeight="3dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/playvideo_seekbar"
+        android:thumb="@drawable/video_icon_progress_btn"/>
+
+</RelativeLayout>

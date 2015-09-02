@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:gravity="left|center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="48px"
+        android:maxWidth="48px" 
+        android:src="@drawable/ic_bluetooth" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvAppLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:gravity="left|center"
+        android:text="@string/weixin"
+        android:textColor="#FFFFFF" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.ui.DateTimeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/datetime_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264863" >
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/pray0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="10.32%h"
+        app:layout_marginLeftPercent="7.59%w"
+        app:layout_marginRightPercent="7.59%w"
+        app:layout_marginTopPercent="6.68%h"
+        android:background="@drawable/selector_time_date_pay" >
+
+        <ImageView
+            android:id="@+id/img_date_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            app:layout_heightPercent="78.43%h"
+            app:layout_widthPercent="6.173%w"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/my_enter_icon" />
+
+        <TextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/img_date_time"
+            android:layout_toStartOf="@id/img_date_time"
+            app:layout_textSizePercent="62.74%h"
+            android:gravity="center|start" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/v0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/pray0"
+        app:layout_marginBottomPercent="2.02%h"
+        app:layout_marginLeftPercent="7.59%w"
+        app:layout_marginRightPercent="7.59%w"
+        android:background="#375A73" />
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/pray2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/v0"
+        app:layout_heightPercent="44.53%h"
+        app:layout_marginLeftPercent="7.59%w"
+        app:layout_marginRightPercent="7.59%w" >
+
+        <com.spt.carengine.datepicker.DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="58.95%w" />
+
+        <com.spt.carengine.datepicker.TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/datePicker"
+            android:layout_toRightOf="@id/datePicker"
+            app:layout_marginLeftPercent="4.629%w"
+            app:layout_widthPercent="37.65%w" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/pray2"
+        app:layout_marginBottomPercent="2.02%h"
+        app:layout_marginLeftPercent="7.59%w"
+        app:layout_marginRightPercent="7.59%w"
+        app:layout_marginTopPercent="2.02%h"
+        android:background="#375A73" />
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/pray1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/back_bar"
+        android:layout_below="@id/v1"
+        app:layout_heightPercent="14.17%h" >
+
+        <CheckBox
+            android:id="@+id/ck_date_switch"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="74.28%h"
+            app:layout_marginRightPercent="7.59%w"
+            app:layout_marginTopPercent="12.5%h"
+            app:layout_widthPercent="16.23%w"
+            android:background="@drawable/checkbox_fm_switch"
+            android:button="@null"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_date_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/ck_date_switch"
+            android:layout_toStartOf="@id/ck_date_switch"
+            app:layout_marginLeftPercent="7.59%w"
+            app:layout_marginTopPercent="12.5%h"
+            app:layout_textSizePercent="45.71%h"
+            android:gravity="center|start"
+            android:text="@string/tv_date_update"
+            android:textColor="@color/white" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.21%h"
+        layout="@layout/return_bar" />
+
+</com.spt.carengine.ui.DateTimeView>

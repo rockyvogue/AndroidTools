@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.DialogBluetooth xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <com.spt.carengine.view.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:layout_heightPercent="36.44%h"
+        app:layout_marginBottomPercent="18.23%h"
+        app:layout_widthPercent="20.16%w"
+        android:background="@drawable/wifi_more_bg"
+        android:orientation="vertical" >
+
+        <com.spt.carengine.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:layout_textSizePercent="40%h"
+                android:text="@string/wifi_add_wlan" />
+        </com.spt.carengine.view.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#375A73" />
+
+        <com.spt.carengine.view.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:layout_textSizePercent="50%h"
+                android:text="@string/wifi_connect_wlan" />
+        </com.spt.carengine.view.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#375A73" />
+
+        <com.spt.carengine.view.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:layout_textSizePercent="50%h"
+                android:text="@string/wifi_advanced_setup" />
+        </com.spt.carengine.view.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="1dp"
+            android:background="#375A73" />
+    </com.spt.carengine.view.PercentLinearLayout>
+
+</com.spt.carengine.view.DialogBluetooth>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+    <header
+        android:icon="@drawable/ic_bluetooth" 
+        android:title="header 1"
+        android:summary="header 1's summary" />
+    
+    <header 
+        android:icon="@drawable/ic_bluetooth"
+        android:title="header 2"
+        android:summary="header 2's summary" />
+    
+    <header 
+        android:icon="@drawable/ic_bluetooth"
+        android:title="header 3"
+        android:summary="header 3's summary" />
+</preference-headers>

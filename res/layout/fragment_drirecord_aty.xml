@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/listTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="100dip"
+        android:layout_marginRight="100dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/title_borad_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:src="@drawable/ic_dog" />
+
+        <TextView
+            android:id="@+id/tvAppLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|center"
+            android:text="@string/car_record_label"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- ListView android:listSelector="@drawable/list_selector" -->
+    <!-- <ListView -->
+
+    <com.spt.carengine.view.arc.MyArcListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="80dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:entries="@array/test_list"
+        android:listSelector="@drawable/list_selector" />
+
+
+</RelativeLayout>

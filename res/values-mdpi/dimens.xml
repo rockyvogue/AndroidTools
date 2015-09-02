@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- 外面为空心环，内为实心填充圆，采用两层图层实现，厚度始终为0，只是用内半径参数 -->
+    <dimen name="ringThicknessZero">0dp</dimen>
+
+    <!-- 环半径20，厚度8，间隙4，则内填充圆为 20- 4 - 0.5*8 -->
+    <dimen name="thumb_strokeWidth">8dp</dimen>
+    <!-- 内圆半径、实心填充圆 -->
+    <dimen name="thumb_innerRadius">12dp</dimen>
+    <!-- 外圆半径、空心带厚度圆 -->
+    <dimen name="thumb_ringInnerRadius">20dp</dimen>
+
+    <!-- 外边框圆角，根据系统默认ListView的Item+Div高度 64/2 -->
+    <dimen name="borad_cornersRadius">28dp</dimen>
+    <dimen name="borad_strokeWidth">2dp</dimen>
+
+    <!-- 行车记录仪界面分辨率、时间选择环。 -->
+    <!-- 153 图片一半，在减去厚度一半 -->
+    <dimen name="cyle_btn_innerRadius">70dp</dimen>
+    <dimen name="cyle_btn_ringInnerRadius">76dp</dimen>
+
+    <!-- 主界面 -->
+    <dimen name="main_layout_width">764dp</dimen>
+    <dimen name="main_layout_height">493dp</dimen>
+    <dimen name="main_layout_padding_left">-10dp</dimen>
+    <dimen name="main_left_layout_width">204dp</dimen>
+    <dimen name="main_top_layout_height">47dp</dimen>
+    <dimen name="main_left_recorder_width">163dp</dimen>
+    <dimen name="main_left_recorder_margin">16dp</dimen>
+    <dimen name="main_left_voice_width">58dp</dimen>
+    <dimen name="main_left_voice_height">81dp</dimen>
+    <dimen name="main_left_voice_margin_top">16dp</dimen>
+    <dimen name="main_left_voice_margin_bottom">15dp</dimen>
+    <dimen name="main_left_camera_width">64dp</dimen>
+    <dimen name="main_left_camera_height">53dp</dimen>
+    <dimen name="main_left_camera_margin_top">30dp</dimen>
+    <dimen name="main_left_camera_margin_bottom">29dp</dimen>
+    <dimen name="main_left_home_width">69dp</dimen>
+    <dimen name="main_left_home_height">64dp</dimen>
+    <dimen name="main_left_home_margin_top">25dp</dimen>
+    <dimen name="main_content_margin_left">14dp</dimen>
+    <dimen name="main_content_margin_in">15dp</dimen>
+    <dimen name="status_bar_margin_right">17dp</dimen>
+    
+    <dimen name="video_more_view_width">300dp</dimen>
+    <dimen name="video_more_view_height">190dp</dimen>
+    <!--  -->
+    <dimen name="back_btn_pading">15dp</dimen>
+    <dimen name="back_tv_size">25sp</dimen>
+    
+    <!-- Voice -->
+    <dimen name="voice_text_size">20.0sp</dimen>
+    <dimen name="voice_time_size">15.0sp</dimen>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.WiFiConnectView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wifi_connect_wlan_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264863" >
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="20.28%h"
+        app:layout_marginTopPercent="30.43%h"
+        app:layout_widthPercent="50%w"
+        layout="@layout/loading" />
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/wifi_connect_wlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_marginLeftPercent="1.96%w"
+        app:layout_marginRightPercent="1.96%w"
+        app:layout_marginTopPercent="2.63%h" >
+
+        <com.spt.carengine.view.PercentRelativeLayout
+            android:id="@+id/pray0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="17.32%h"
+            android:background="#162C3C" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_marginLeftPercent="2.72%w"
+                app:layout_textSizePercent="45.71%h"
+                android:background="#162C3C"
+                android:gravity="start|center"
+                android:text="@string/user_tv1"
+                android:textColor="#FFFFFF" />
+        </com.spt.carengine.view.PercentRelativeLayout>
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+    <ListView
+        android:id="@+id/wifi_connect_listView"
+        style="@style/Height_Width_match"
+        android:layout_above="@id/back_bar"
+        android:layout_below="@id/wifi_connect_wlan"
+        android:background="#264962"
+        android:cacheColorHint="#00ffffff"
+        android:listSelector="@drawable/list_item_user_selector"
+        android:scrollbars="@null" />
+
+</com.spt.carengine.view.WiFiConnectView>

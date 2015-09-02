@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.voice.assistant.view.SessionLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/window_width"
+    android:layout_height="@dimen/window_height"
+    android:orientation="vertical" >
+
+    <com.spt.carengine.voice.assistant.view.MicrophoneControl
+        android:id="@+id/microphoneControl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mic_height"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/session_view_bg"
+        android:gravity="center" >
+
+        <com.spt.carengine.voice.assistant.view.SessionContainer
+            android:id="@+id/sessionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cancelDivider"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:id="@+id/cancelDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/bottomCancelBtn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/line_list_divider"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bottomCancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_call_ok_bg"
+            android:text="@string/cancel"
+            android:textColor="@color/grey_white"
+            android:textSize="@dimen/smaller_text_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</com.spt.carengine.voice.assistant.view.SessionLinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264863" >
+
+    <ImageView
+        android:id="@+id/img_blconnect"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:layout_widthPercent="13.74%w"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fm_bluetooth_img"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="1.96%w"
+        app:layout_textSizePercent="45.71%h"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/img_connect"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/tv_phone"
+        android:layout_toRightOf="@id/tv_phone"
+        app:layout_heightPercent="47.5%h"
+        app:layout_marginLeftPercent="1.96%w"
+        app:layout_widthPercent="4.97%w"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bt_icon_on"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/user_list_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#375A73" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

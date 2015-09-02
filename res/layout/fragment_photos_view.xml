@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.album.view.PhotosView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/photos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.spt.carengine.view.PercentLinearLayout
+        android:id="@+id/no_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="26.05%h"
+        app:layout_marginTopPercent="25.56%h"
+        app:layout_widthPercent="19.63%w"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="70%h"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo_none_pic_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_textSizePercent="24%h"
+            android:gravity="center_horizontal"
+            android:text="@string/no_photo"
+            android:textColor="#162c3c" />
+    </com.spt.carengine.view.PercentLinearLayout>
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/back_bar"
+        app:layout_marginLeftPercent="1.96%w"
+        app:layout_marginRightPercent="1.96%w"
+        android:fadingEdge="none"
+        android:gravity="center_horizontal"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+</com.spt.carengine.album.view.PhotosView>

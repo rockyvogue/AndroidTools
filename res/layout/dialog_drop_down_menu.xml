@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.DropDownMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drop_down_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        app:layout_heightPercent="18.52%h"
+        app:layout_widthPercent="79.58%w"
+        android:background="@drawable/drop_down_bg"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/volume_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="3.93%w"
+            app:layout_textSizePercent="32.65%h"
+            android:includeFontPadding="false"
+            android:text="@string/volume_name"
+            android:textColor="#ffffff" />
+
+        <SeekBar
+            android:id="@+id/volume_seekbar"
+            android:layout_width="674dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/volume_name"
+            android:maxHeight="10dp"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:progressDrawable="@drawable/volume_seekbar"
+            android:thumb="@drawable/fm_channel_but"
+            android:thumbOffset="28dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="3%h"
+            app:layout_marginBottomPercent="8%h"
+            app:layout_widthPercent="5.24%w"
+            android:contentDescription="@null"
+            android:src="@drawable/drop_down_icon" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+</com.spt.carengine.view.DropDownMenuView>

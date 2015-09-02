@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>  
+  <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!-- 需要等比例计算，原始都是以高度居中，因此需要固定相对高度 -->
+    
+    <!-- 高度差计算:  stroke的width的差值的 一半 即可底对齐 -->
+    <!-- 宽度(即线高)保持一致好对齐，如果宽度不一致，起始点位置都不一样， -->
+	<item android:top="-30dp">
+		   <shape android:shape="line"  
+			  	android:useLevel="false">  
+			    <stroke android:width="30dp" android:color="#FF00FF00" android:dashWidth="5dp" android:dashGap="15dp" />
+			 </shape>  
+	</item>
+	
+	<item android:top="40dp">
+		  <shape android:shape="line"  
+			  	android:useLevel="false">  
+			    <stroke android:width="10dp" android:color="#FF00FF00" android:dashWidth="5dp" android:dashGap="30dp" />
+			 </shape>  
+	</item>
+	
+	<item android:top="70dp">
+		  <shape android:shape="line"  
+			  	android:useLevel="false">  
+			    <stroke android:width="2dp" android:color="#FF00FF00" android:dashWidth="5dp" android:dashGap="10dp" />
+			 </shape>  
+	</item>
+	
+</layer-list> 
+<!-- 测 -->

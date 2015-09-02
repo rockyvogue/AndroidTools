@@ -1,0 +1,113 @@
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="#162c3c"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_contact_back"
+                    android:layout_width="29dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/comm_btn_back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textureView1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#162c3c"
+                android:gravity="left|center"
+                android:text="@string/bluetooth_contact"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="horizontal" >
+
+            <com.spt.carengine.view.PercentLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bt_index_a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layout_textSizePercent="7.5%h"
+                    android:background="@drawable/select_btn_bt_key"
+                    android:text="@string/bt_index_a"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bt_index_h"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layout_textSizePercent="7.5%h"
+                    android:background="@drawable/select_btn_bt_key"
+                    android:text="@string/bt_index_h"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bt_index_o"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layout_textSizePercent="7.5%h"
+                    android:background="@drawable/select_btn_bt_key"
+                    android:text="@string/bt_index_o"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/bt_index_u"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layout_textSizePercent="7.5%h"
+                    android:background="@drawable/select_btn_bt_key"
+                    android:text="@string/bt_index_u"
+                    android:textColor="#FFFFFF" />
+            </com.spt.carengine.view.PercentLinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.spt.carengine.view.listitemmenu.ListMenuListView
+                    android:id="@+id/lv_call_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#264962" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.spt.carengine.view.PercentRelativeLayout>

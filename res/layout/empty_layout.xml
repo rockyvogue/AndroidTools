@@ -1,0 +1,30 @@
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_folder_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/explore_video_bg_color"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/iv_no_vedio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="26.05%h"
+        app:layout_widthPercent="14.91%w"
+        android:contentDescription="@null"
+        android:src="@drawable/video_none_video_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_no_vedio"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        app:layout_textSizePercent="8.93%h"
+        android:text="@string/folder_no_video"
+        android:textColor="#162c3c" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

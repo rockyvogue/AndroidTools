@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false"  android:color="#162c3c" />
+    <item android:state_focused="true"  android:color="#1D8FE8" />
+</selector>
+<!-- 拨号中联系人界面的字母索引-->

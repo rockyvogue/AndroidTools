@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/percent_back_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_gravity="center_vertical"
+    android:background="#00000000"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/percent_backbtn_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        app:layout_heightPercent="35%h"
+        app:layout_widthPercent="50%h"
+        app:layout_marginLeftPercent="20%h"
+        android:scaleType="fitXY"
+        android:src="@drawable/back_btn" />
+
+    <TextView
+        android:id="@+id/percent_back_img_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/percent_backbtn_img"
+        android:layout_toRightOf="@+id/percent_backbtn_img"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/home_car_record"
+        android:textColor="#FEFEFE"
+        app:layout_marginLeftPercent="15%h"
+        app:layout_textSizePercent="35%h" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

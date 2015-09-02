@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- 这个图片需要动态替换，才能靠左对齐 -->
+    <item android:id="@android:id/icon2" android:drawable="@drawable/my_ring_thumb" 
+        android:left="-1dp"
+        >
+    </item>
+	
+    <!-- 边框 -->
+	<item android:drawable="@drawable/border_blue">  
+	</item>
+	
+</layer-list> 
+<!-- 蓝色外框加蓝色圆环  -->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.album.view.PhotoItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginTopPercent="7.81%h"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo_temp" />
+
+    <ImageView
+        android:id="@+id/photo_selected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginTopPercent="7.81%h"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_pic_selected"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/photo_selected_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        app:layout_heightPercent="19.77%h"
+        app:layout_marginRightPercent="4.26%w"
+        app:layout_marginTopPercent="13.02%h"
+        app:layout_widthPercent="19.77%h"
+        android:contentDescription="@null"
+        android:src="@drawable/photo_pic_unselected_icon" />
+
+</com.spt.carengine.album.view.PhotoItemView>

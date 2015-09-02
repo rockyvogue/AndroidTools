@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/voice_help_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/explore_video_bg_color"
+    android:visibility="visible" >
+
+    <com.spt.carengine.view.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/record_overlay_bottom_rl"
+        android:background="@color/explore_video_bg_color"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/voice_help_view_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:layout_heightPercent="20%h"
+            app:layout_marginLeftPercent="5%h"
+            app:layout_textSizePercent="8%h"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:text="@string/voice_help_list"
+            android:textColor="@color/voice_help_top_text" />
+
+        <TextView
+            android:id="@+id/voice_help_view_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="10%h"
+            app:layout_textSizePercent="6%h"
+            android:contentDescription="@null"
+            android:text="@string/voice_help_command_instance"
+            android:textColor="@color/white" />
+    </com.spt.carengine.view.PercentLinearLayout>
+
+    <!-- 底部栏 -->
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/voice_help_view_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18%h"
+        android:background="@color/return_bar_bg" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/percent_backbtn_layout" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+</com.spt.carengine.view.PercentRelativeLayout>

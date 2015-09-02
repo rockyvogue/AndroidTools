@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spt.carengine.fm.provider.BtMainFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:id="@+id/fragmentRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:id="@+id/bottomList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@drawable/home_btn_bg_d" >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbDial"
+                    style="@style/navigation_bottom_radio"
+                    android:background="@drawable/style_navigation_radio_phone"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rbContact"
+                    style="@style/navigation_bottom_radio"
+                    android:background="@drawable/style_navigation_radio_contact" />
+
+                <RadioButton
+                    android:id="@+id/rbLog"
+                    style="@style/navigation_bottom_radio"
+                    android:background="@drawable/style_navigation_radio_log" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

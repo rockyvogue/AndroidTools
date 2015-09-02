@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 内框和环深蓝色 -->
+    <color name="borad_color_blue">#FF5892FF</color>
+    <!-- 外边框浅蓝色 -->
+    <color name="bg_border_color_blue">#FF1A429C</color>
+    <!-- 浅灰色 -->
+    <color name="bg_color_grey">#FF999999</color>
+    <!-- 深色 -->
+    <color name="bg_color">#1D3343</color>
+    <color name="gray">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <!-- 绿色 -->
+    <color name="green">#16D0A2</color>
+    <color name="traffic_text_color">#20b092</color>
+
+    <!-- 最近通话列表右边时间的textview文本颜色 -->
+    <color name="recent_list_item_time_color">#808080</color>
+    <!-- 来电时，接听按钮的背景颜色 -->
+    <color name="bluetooth_incoming_answer_btnbg_color">#409111</color>
+    <!-- 来电时，挂断按钮的背景颜色 -->
+    <color name="bluetooth_incoming_hangup_btnbg_color">#FE0000</color>
+
+    <!-- The operation background of playing recording video -->
+    <color name="playvideo_overlay_bg">#00000000</color>
+    <!-- The video time track progress background -->
+    <color name="playvideo_time_progress_track_bg">#33162b3c</color>
+    <!-- The bottom bar background of playing video -->
+    <color name="playvideo_bottom_bar_bg">#162B3C</color>
+
+    <!-- The seekbar of  playing video -->
+    <color name="video_seekbar_bg_translate_color">#03263A</color>
+    <color name="video_seekbar_second_color">#3E3E3F</color>
+    <color name="video_seekbar_first_color">#1D8FE9</color>
+
+    <!-- Explore video file background color -->
+    <color name="explore_video_bg_color">#274862</color>
+    <!-- listview selected item -->
+    <color name="listview_item_click_color">#eeeeee</color>
+    <color name="listview_item_normal_color">#FFFFFF</color>
+    <!-- ListView divider line color -->
+    <color name="listview_divider_line_color">#365974</color>
+    <color name="listview_item_little_font_color">#adb9c2</color>
+    <color name="tableS">#162B3C</color>
+    <color name="tableD">#1D8FE8</color>
+    <color name="return_bar_bg">#162B3C</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- voice -->
+    <color name="semi_transparent_w">#7fffffff</color>
+    <color name="thirty_transparent_black">#4d000000</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="voice_help_top_text">#1D8DE8</color>
+    <color name="voice_blue">#1D8FE8</color>
+
+    <!-- The content background -->
+    <color name="content_bg">#274862</color>
+    <color name="return_bar_text_pressed_color">#1d8fe9</color>
+
+    <!-- voice -->
+    <color name="light_grey">#CCCCCC</color>
+    <color name="grey_white">#F6F6F6</color>
+    <color name="brown">#3D3D3D</color>
+    <color name="title_bg">#97C3D2</color>
+    <color name="music_item_bg_normal">#666666</color>
+    <color name="music_item_bg_pressed">#4D33B5E5</color>
+    <color name="state_selected">#33B5E5</color>
+    <color name="state_pressed">#7BC7E1</color>
+    <color name="state_focused">#00BAFF</color>
+    <color name="grey">#777777</color>
+    <color name="dark_blue">#003567</color>
+    <color name="blue">#0099CC</color>
+    <color name="red">#CC0000</color>
+    <color name="gren">#669900</color>
+    <color name="text_stock_name">#003567</color>
+    <color name="page_memo_management_header">#E6E6E6</color>
+    <!-- 实木色 -->
+    <color name="burlywood">#DEB887</color>
+
+    
+    <color name="popup_title_color">#ffffff</color>
+    <color name="advance_setting_item_bg">#264962</color>
+     <color name="light_blue">#33b5e5</color>
+    <color name="transparents">#00000000</color>
+	<color name="textdec">#f18c14</color>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Height_Width_match"
+    android:background="#264962" >
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <com.spt.carengine.view.PercentLinearLayout
+        android:id="@+id/wifi_lv_create_ok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/back_bar"
+        android:layout_centerInParent="true"
+        android:background="#264962"
+        android:orientation="vertical" >
+
+        <ImageView
+            style="@style/Height_Width_0"
+            android:layout_gravity="center"
+            app:layout_heightPercent="24.19%h"
+            app:layout_marginLeftPercent="40%w"
+            app:layout_marginTopPercent="40%h"
+            app:layout_widthPercent="15.71%w"
+            android:src="@drawable/ic_notification" />
+
+        <TextView
+            android:id="@+id/wifi_tv_createap_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="40%w"
+            app:layout_textSizePercent="7.29%h"
+            android:gravity="center" />
+    </com.spt.carengine.view.PercentLinearLayout>
+
+    <com.spt.carengine.view.MyListView
+        android:id="@+id/freelook_listview"
+        style="@style/Height_Width_match"
+        android:layout_above="@id/back_bar"
+        android:background="#264962"
+        android:cacheColorHint="#00ffffff"
+        android:listSelector="@drawable/list_item_user_selector"
+        android:scrollbars="@null" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

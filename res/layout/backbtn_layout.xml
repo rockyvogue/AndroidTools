@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/back_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_gravity="center_vertical"
+    android:background="#00000000" >
+
+    <com.spt.carengine.view.PercentLinearLayout
+        android:id="@+id/no_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/backbtn_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            app:layout_marginLeftPercent="2.31%w"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/back_btn_right_side_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/backbtn_img"
+            android:layout_toRightOf="@+id/backbtn_img"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/home_car_record"
+            android:textColor="#FEFEFE"
+            android:textSize="@dimen/back_tv_size" 
+            app:layout_marginLeftPercent="1.31%w"/>
+    </com.spt.carengine.view.PercentLinearLayout>
+			<!-- android:paddingEnd="@dimen/back_btn_pading"
+            android:paddingLeft="@dimen/back_btn_pading"
+            android:paddingRight="@dimen/back_btn_pading"
+            android:paddingStart="@dimen/back_btn_pading" -->
+</com.spt.carengine.view.PercentRelativeLayout>

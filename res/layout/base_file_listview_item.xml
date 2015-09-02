@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/explore_video_bg_color"
+    android:orientation="vertical" >
+
+    <!-- 缩略图 -->
+
+    <ImageView
+        android:id="@+id/item_thumb"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/item_selected"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"/>
+
+    <!-- 文件名称 -->
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/item_thumb"
+        android:singleLine="true"
+        android:textColor="@color/white" >
+    </TextView>
+    <!-- 文件时间 -->
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_thumb"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/item_thumb"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <!-- 文件大小 -->
+
+    <TextView
+        android:id="@+id/item_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_thumb"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/item_time"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/listview_divider_line_color" >
+    </View>
+
+</RelativeLayout>

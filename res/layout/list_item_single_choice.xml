@@ -1,0 +1,22 @@
+<!-- <CheckedTextView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:checkMark="@null"
+    android:layoutDirection="rtl"
+    android:drawableLeft="@drawable/ic_sure"
+/> -->
+<RadioButton  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:checkMark="@null"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false"
+    android:button="@drawable/radio_checked_selector"
+    android:background="@null"
+/>
+<!-- 需要设置背景为 null ，不然在某些皮肤下就会有大圆环，因为皮肤定义中会更改其背景 -->

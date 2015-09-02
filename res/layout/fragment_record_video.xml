@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/record_video_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/record_file_bg"
+    android:orientation="vertical" >
+
+    <!-- 视频播放渲染类 -->
+
+    <FrameLayout
+        android:id="@+id/record_video_display_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:fitsSystemWindows="true" >
+
+        <SurfaceView
+            android:id="@+id/record_video_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/include_bottom"
+        layout="@layout/fragment_record_video_overlay" />
+
+</RelativeLayout>

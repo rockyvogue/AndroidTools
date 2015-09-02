@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wifi_proxy_settings_main_ly"
+    style="@style/Height_Width_match" >
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <com.spt.carengine.view.PercentLinearLayout
+        android:id="@+id/wifi_proxy_settings_layout"
+        style="@style/Height_Width_match"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="48.58%h"
+        android:orientation="vertical" >
+
+        <com.spt.carengine.view.PercentLinearLayout
+            style="@style/Height_Width_0_match"
+            android:layout_below="@id/back_bar"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/wifi_proxy_settings_servers"
+                style="@style/Height_Width_wrap"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="7.09%w"
+                app:layout_textSizePercent="40%h"
+                android:text="@string/wifi_proxy_settings_servers_tv"
+                android:textColor="@color/text_color_selector" />
+
+            <EditText
+                android:id="@+id/wifi_proxy_settings_edit_servers"
+                style="@style/Height_Width_0"
+                app:layout_heightPercent="12.15%h"
+                app:layout_marginLeftPercent="39.27%w"
+                app:layout_marginTopPercent="2.02%h"
+                app:layout_textSizePercent="7.29%h"
+                app:layout_widthPercent="32.20%w"
+                android:text="@string/wifi_proxy_settings_edit_servers_tv"
+                android:background="@color/return_bar_bg" />
+        </com.spt.carengine.view.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_marginLeftPercent="3.04%w"
+            app:layout_marginRightPercent="3.04%w"
+            android:background="#375A73" />
+
+        <com.spt.carengine.view.PercentLinearLayout
+            style="@style/Height_Width_0_match"
+            android:layout_below="@id/back_bar"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/wifi_proxy_settings_port"
+                style="@style/Height_Width_wrap"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="7.09%w"
+                app:layout_textSizePercent="40%h"
+                android:text="@string/wifi_proxy_settings_port_tv"
+                android:textColor="@color/text_color_selector" />
+
+            <EditText
+                android:id="@+id/wifi_proxy_settings_edit_port"
+                style="@style/Height_Width_0"
+                app:layout_heightPercent="12.15%h"
+                app:layout_marginLeftPercent="39.27%w"
+                app:layout_marginTopPercent="2.02%h"
+                app:layout_textSizePercent="7.29%h"
+                android:text="@string/wifi_proxy_settings_edit_port_tv"
+                app:layout_widthPercent="32.20%w"
+                android:background="@color/return_bar_bg" />
+        </com.spt.carengine.view.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_marginLeftPercent="3.04%w"
+            app:layout_marginRightPercent="3.04%w"
+            android:background="#375A73" />
+
+        <com.spt.carengine.view.PercentLinearLayout
+            style="@style/Height_Width_0_match"
+            android:layout_below="@id/back_bar"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/wifi_proxy_settings_agency"
+                style="@style/Height_Width_wrap"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
+                app:layout_marginLeftPercent="7.09%w"
+                android:text="@string/wifi_proxy_settings_agency_tv"
+                app:layout_textSizePercent="20%h"
+                android:textColor="@color/text_color_selector" />
+        </com.spt.carengine.view.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_marginLeftPercent="3.04%w"
+            app:layout_marginRightPercent="3.04%w"
+            android:background="#375A73" />
+    </com.spt.carengine.view.PercentLinearLayout>
+
+    <EditText
+        android:id="@+id/wifi_proxy_settings_edit_agency"
+        style="@style/Height_Width_0"
+        android:layout_below="@id/wifi_proxy_settings_layout"
+        app:layout_heightPercent="18.22%h"
+        app:layout_marginLeftPercent="2.36%w"
+        app:layout_marginRightPercent="2.36%w"
+        app:layout_marginTopPercent="2.43%h"
+        app:layout_textSizePercent="4.85%h"
+        app:layout_widthPercent="95.16%w"
+        android:textSize="@string/wifi_proxy_settings_edit_agency_edt"
+        android:background="@color/return_bar_bg" />
+
+    <Button
+        android:id="@+id/wifi_proxy_settings_save"
+        style="@style/Height_Width_0"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/wifi_proxy_settings_edit_agency"
+        app:layout_heightPercent="18.22%h"
+        app:layout_marginRightPercent="2.36%w"
+        app:layout_marginTopPercent="2.43%h"
+        app:layout_textSizePercent="6.48%h"
+        android:text="@string/wifi_proxy_settings_save_btn"
+        app:layout_widthPercent="17.02%w" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

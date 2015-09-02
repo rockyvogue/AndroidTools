@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_heightPercent="16.19%h" >
+
+    <TextView
+        android:id="@+id/system_settings_List2_item_title"
+        style="@style/Height_Width_wrap"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:layout_marginLeftPercent="7.09%w"
+        app:layout_textSizePercent="40%h"
+        android:text="@string/wifi_traffic_control"
+        android:textColor="@color/text_color_selector" />
+
+    <CheckBox
+        android:id="@+id/system_settings_List2_item_checkBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="57.77%h"
+        app:layout_marginRightPercent="3.04%w"
+        app:layout_widthPercent="16.23%w"
+        android:background="@drawable/checkbox_fm_switch"
+        android:button="@null"
+        android:contentDescription="@null" />
+
+    <View
+        android:id="@+id/user_list_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        app:layout_marginLeftPercent="3.04%w"
+        app:layout_marginRightPercent="3.04%w"
+        android:background="#375A73" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

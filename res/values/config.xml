@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 以下都是 true 为打开， false 为关闭 -->
+
+    <!-- 异常捕获的log日志开关 -->
+    <bool name="uncaught_log_switch">false</bool>
+	
+</resources>

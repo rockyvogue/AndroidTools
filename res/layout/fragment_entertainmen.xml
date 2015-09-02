@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_entertainment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.spt.carengine.view.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.spt.carengine.view.PercentLinearLayout
+            android:id="@+id/ll_entertainment_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            app:layout_heightPercent="18.18%h"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10sp"
+                app:layout_heightPercent="60%h"
+                app:layout_widthPercent="60%h"
+                android:src="@drawable/iv_back_selector" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                app:layout_textSizePercent="48%h"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff" />
+        </com.spt.carengine.view.PercentLinearLayout>
+
+        <com.spt.carengine.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/ll_entertainment_title"
+            app:layout_heightPercent="61%h"
+            android:background="#ffffff" >
+
+            <FrameLayout
+                android:id="@+id/ll_entertainment_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+        </com.spt.carengine.view.PercentLinearLayout>
+
+        <com.spt.carengine.view.PercentLinearLayout
+            android:id="@+id/ll_entertainment_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="20.2%h"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_music"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/entertainment_music_icon_n" />
+
+            <ImageButton
+                android:id="@+id/ib_book"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/entertainment_book_icon_n" />
+
+            <ImageButton
+                android:id="@+id/ib_recent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/entertainment_recent_icon_n" />
+
+            <ImageButton
+                android:id="@+id/ib_blmu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/entertainment_blmu_icon_n"
+                android:visibility="gone" />
+        </com.spt.carengine.view.PercentLinearLayout>
+    </com.spt.carengine.view.PercentLinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264863" >
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <ListView
+        android:id="@+id/sd_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/back_bar"
+        app:layout_marginBottomPercent="7.42%h"
+        app:layout_marginLeftPercent="3.92%w"
+        app:layout_marginRightPercent="3.92%w"
+        app:layout_marginTopPercent="7.42%h"
+        android:background="@drawable/sdcark_bg"
+        android:cacheColorHint="#ffffff"
+        android:listSelector="#00000000"
+        android:scrollbars="@null" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

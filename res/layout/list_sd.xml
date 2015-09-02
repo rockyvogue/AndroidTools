@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_all_gb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginBottomPercent="3.12%h"
+        app:layout_marginLeftPercent="6.39%w"
+        app:layout_marginTopPercent="12.50%h"
+        app:layout_textSizePercent="20.00%h"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_used_gb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_all_gb"
+        app:layout_marginBottomPercent="3.12%h"
+        app:layout_marginLeftPercent="6.39%w"
+        app:layout_textSizePercent="20.00%h"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_surplus_gb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_used_gb"
+        app:layout_marginLeftPercent="6.39%w"
+        app:layout_textSizePercent="20.00%h"
+        android:textColor="@color/white" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

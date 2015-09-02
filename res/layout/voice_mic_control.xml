@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/voice_bottome_bar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/playvideo_bottom_bar_bg" >
+
+        <ImageView
+            android:id="@+id/voice_start_speak_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            app:layout_heightPercent="75%h"
+            app:layout_widthPercent="75%h"
+            android:contentDescription="@null"
+            android:src="@drawable/voice_open_btn"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/voice_recognition_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            app:layout_heightPercent="50%h"
+            app:layout_widthPercent="70%w"
+            android:contentDescription="@null"
+            android:src="@drawable/voice_recognition_loading_btn" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+</merge>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264863" >
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/pray0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="14.17%h"
+        app:layout_marginLeftPercent="1.96%w"
+        app:layout_marginRightPercent="1.96%w"
+        app:layout_marginTopPercent="2.63%h"
+        android:visibility="gone"
+        android:background="#162C3C" >
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            app:layout_heightPercent="65.71%h"
+            app:layout_marginRightPercent="2.72%w"
+            app:layout_textSizePercent="40.00%h"
+            app:layout_widthPercent="10.62%w"
+            android:background="@drawable/fm_bluetooth_enter"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/tv_update"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_encoding"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/tv_update"
+            android:layout_toStartOf="@id/tv_update"
+            app:layout_heightPercent="65.71%h"
+            app:layout_marginRightPercent="1.90%w"
+            app:layout_widthPercent="15.80%w"
+            android:background="@drawable/bt_enter_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tv_bluet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/et_encoding"
+            android:layout_toStartOf="@id/et_encoding"
+            app:layout_marginLeftPercent="1.96%w"
+            app:layout_textSizePercent="45.71%h"
+            android:background="#162C3C"
+            android:gravity="start|center"
+            android:text="@string/tv_bluet"
+            android:textColor="#FFFFFF" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+    <ListView
+        android:id="@+id/myCenter_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/back_bar"
+        android:layout_below="@id/pray0"
+        app:layout_marginLeftPercent="1.96%w"
+        app:layout_marginRightPercent="1.96%w"
+        android:background="#264962"
+        android:cacheColorHint="#ffffff"
+        android:listSelector="@drawable/list_item_user_selector"
+        android:scrollbars="@null" />
+
+
+</com.spt.carengine.view.PercentRelativeLayout>

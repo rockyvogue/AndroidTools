@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+	<!-- 内填充圆  -->
+	<item>
+	  <shape android:shape="ring"  android:thickness="@dimen/ringThicknessZero"  
+	      android:innerRadius="@dimen/thumb_innerRadius" 
+		   android:useLevel="false">  
+		     <solid android:color="#FF5892FF" />
+		  </shape>  
+	</item>
+	<!-- 外环 -->
+	<item>
+	  <shape android:shape="ring"  android:thickness="@dimen/ringThicknessZero" 
+	       android:innerRadius="@dimen/thumb_ringInnerRadius" 
+		   android:useLevel="false">  
+		     <stroke android:width="@dimen/thumb_strokeWidth" android:color="#FF5892FF"/>
+		  </shape>  
+	</item>
+</layer-list> 
+<!-- 外环内填充圆 -->

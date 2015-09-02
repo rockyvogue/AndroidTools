@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_timedate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_textSizePercent="58.33%h"
+        android:background="@drawable/select_btn_date_save"
+        android:gravity="center"
+        android:textColor="@color/album_text_selector" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

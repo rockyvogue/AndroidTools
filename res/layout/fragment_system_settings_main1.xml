@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Height_Width_match" >
+
+    <include
+        style="@style/Height_Width_match"
+        layout="@layout/fragment_user_main" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

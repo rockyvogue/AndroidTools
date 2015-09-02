@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <RadioGroup
+            android:id="@+id/resolution_ratio_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <!-- radio_ring_selector  @drawable/radio_ring_selected -->
+            <RadioButton
+                android:id="@+id/radio1080p"
+                android:layout_width="153dp"
+                android:layout_height="153dp"
+                android:background="@drawable/radio_ring_selector_test"
+                android:checked="false"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <!-- radio_ring_selected  /  radio_ring_grey -->
+
+            <RadioButton
+                android:id="@+id/radio720p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/record_time_internal_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/resolution_ratio_radiogroup"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio3m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio2m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radio1m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/camera_bottom_rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/camera_record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/str_init_time" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/check_ring_red" 
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageButton1"
+                android:background="@android:color/transparent"
+                android:button="@drawable/check_ring_red" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/right_bottom_start_record"
+            android:layout_width="142dp"
+            android:layout_height="142dp"
+            android:layout_above="@+id/camera_bottom_rlayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" 
+            android:background="@drawable/select_cheeck_camera"
+            android:button="@null" />
+    </RelativeLayout>
+
+</RelativeLayout>

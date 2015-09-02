@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.ReturnBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/return_bar_bg" >
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:id="@+id/back_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="13.19%w" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            app:layout_heightPercent="30%h"
+            app:layout_widthPercent="40%w"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_btn" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/back_layout"
+        app:layout_marginLeftPercent="1.31%w"
+        app:layout_textSizePercent="40%h"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_marginRightPercent="3.93%w"
+        app:layout_textSizePercent="40%h"
+        android:text="@string/photos_edit"
+        android:textColor="@color/album_text_selector" />
+
+    <ImageButton
+        android:id="@+id/delete_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="62.22%h"
+        app:layout_marginRightPercent="6.93%w"
+        app:layout_widthPercent="7.33%w"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_del" />
+
+    <ImageView
+        android:id="@+id/wifi_more"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="55.56%h"
+        app:layout_marginBottomPercent="22.22%h"
+        app:layout_marginRightPercent="1.96%w"
+        app:layout_marginTopPercent="22.22%h"
+        app:layout_widthPercent="7.33%w"
+        android:background="@drawable/wifi_more_but_n"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/wifi_refresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="55.56%h"
+        app:layout_marginRightPercent="28.80%w"
+        app:layout_widthPercent="7.33%w"
+        android:src="@drawable/wifi_refresh_selector"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/ck_clouds_dog_switch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="57.77%h"
+        app:layout_marginRightPercent="6.54%w"
+        app:layout_widthPercent="16.23%w"
+        android:background="@drawable/checkbox_fm_switch"
+        android:button="@null"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="55.55%h"
+        app:layout_marginRightPercent="4.58%w"
+        app:layout_textSizePercent="40%h"
+        app:layout_widthPercent="14.39%w"
+        android:background="@drawable/select_btn_date_save"
+        android:gravity="center"
+        android:text="@string/tv_update"
+        android:textColor="@color/album_text_selector"
+        android:visibility="gone" />
+    
+
+</com.spt.carengine.view.ReturnBarView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentLinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264962"
+    android:orientation="horizontal" >
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="20.43%w" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_marginBottomPercent="3.28%h"
+            app:layout_marginTopPercent="5.9%h"
+            android:src="@drawable/entertainment_blmu_bg2" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="59.14%w" >
+
+        <ImageButton
+            android:id="@+id/ib_blmu_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/entertainment_blmu_previous_selector" />
+
+        <ImageButton
+            android:id="@+id/ib_blmu_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/entertainment_blmu_play_selector" />
+
+        <ImageButton
+            android:id="@+id/ib_blmu_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/entertainment_blmu_next_selector" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="20.43%w" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:layout_marginBottomPercent="3.28%h"
+            app:layout_marginTopPercent="5.9%h"
+            android:src="@drawable/entertainment_blmu_bg1" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+</com.spt.carengine.view.PercentLinearLayout>

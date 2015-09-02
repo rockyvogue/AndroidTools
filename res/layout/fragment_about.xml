@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264863" >
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/back_bar"
+        app:layout_marginBottomPercent="6.07%h"
+        app:layout_marginLeftPercent="3.92%w"
+        app:layout_marginRightPercent="3.92%w"
+        app:layout_marginTopPercent="6.07%h"
+        android:background="@drawable/select_about_view"
+        android:focusableInTouchMode="false" >
+
+        <com.spt.carengine.view.BaikeTextView
+            android:id="@+id/tv_breif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginBottomPercent="3.71%h"
+            app:layout_marginLeftPercent="2.13%w"
+            app:layout_marginRightPercent="2.13%w"
+            app:layout_marginTopPercent="3.71%h"
+            app:layout_textSizePercent="8.30%h"
+            android:background="@drawable/select_about_textview"
+            android:fadeScrollbars="@null"
+            android:scrollbars="vertical" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+</com.spt.carengine.view.PercentRelativeLayout>

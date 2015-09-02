@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:drawable="@color/video_seekbar_bg_translate_color"/>
+    <item android:id="@android:id/secondaryProgress">
+        <clip android:drawable="@color/video_seekbar_second_color" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@color/video_seekbar_first_color" />
+    </item>
+
+</layer-list>

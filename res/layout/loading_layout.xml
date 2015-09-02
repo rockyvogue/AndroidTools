@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loading_folder_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/explore_video_bg_color"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            style="@style/DirectoryLoading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/loading_photo"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

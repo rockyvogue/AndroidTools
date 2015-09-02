@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">  
+    
+    <item android:bottom="0px" android:drawable="@drawable/border_fill_blue">  
+	</item>
+	<!-- android:left="5px" android:right="5px" android:top="5px" android:bottom="5px" -->
+	<item android:drawable="@drawable/border_blue">  
+	</item>
+	
+</layer-list> 
+<!-- 菜单背景色 -->

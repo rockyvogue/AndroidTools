@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wifi_main_ly"
+    style="@style/Height_Width_match" >
+
+    <include
+        android:id="@+id/back_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <ListView
+        android:id="@+id/myCenter_listView"
+        style="@style/Height_Width_match"
+        android:layout_above="@id/back_bar"
+        android:background="#264962"
+        android:cacheColorHint="#00ffffff"
+        android:listSelector="@drawable/list_item_user_selector"
+        android:scrollbars="@null" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

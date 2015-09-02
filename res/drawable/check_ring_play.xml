@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 环半径为 153 图片的一半，还要减去外环厚度一半，厚度为3 -->
+    <!-- 内填充圆 -->
+    <item>
+        <shape
+            android:innerRadius="10dp"
+            android:shape="rectangle"
+            android:thickness="10dp"
+            android:useLevel="false" >
+
+            <!-- 颜色 #FFFFFFFF -->
+            <!-- <solid android:color="#FF5892FF" /> -->
+            <!-- <stroke android:width="2dp" android:color="#FF5892FF"/> -->
+        </shape>
+    </item>
+    <!-- 外环 -->
+    <item>
+        <shape
+            android:innerRadius="65dp"
+            android:shape="ring"
+            android:thickness="@dimen/ringThicknessZero"
+            android:useLevel="false" >
+            <stroke
+                android:width="10dp"
+                android:color="#FFFF6600" />
+        </shape>
+    </item>
+
+
+</layer-list> <!-- 外环内填充圆 -->
+
+
+<!-- 橘红色外环，灰色内三角形 -->
+<!-- 行车记录界面分辨率、时间选择 -->

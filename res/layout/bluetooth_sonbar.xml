@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pray_buletooth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="62.22%h"
+        app:layout_widthPercent="25.22%w"
+        android:background="@drawable/fm_bluetooth_search"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <CheckBox
+        android:id="@+id/checkbox_fm_switch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_search"
+        android:layout_toStartOf="@id/img_search"
+        app:layout_heightPercent="57.78%h"
+        app:layout_marginRightPercent="18.91%w"
+        app:layout_widthPercent="55.85%w"
+        android:background="@drawable/checkbox_fm_switch"
+        android:button="@null"
+        android:checked="true" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

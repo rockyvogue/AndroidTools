@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_wifis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="40.74%h"
+        app:layout_marginLeftPercent="40.31%w"
+        app:layout_marginTopPercent="30.19%h"
+        app:layout_widthPercent="39.68%w"
+        android:background="@drawable/security_code_pop_ups_bg"
+        android:orientation="vertical" >
+
+        <com.spt.carengine.view.PercentRelativeLayout
+            android:id="@+id/pray_bootom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="36.36%h" >
+
+            <View
+                android:id="@+id/v01"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="-30.00%w"
+                app:layout_marginRightPercent="-30.00%w"
+                android:background="#375A73" />
+
+            <TextView
+                android:id="@+id/tv_cancle1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/v0"
+                app:layout_textSizePercent="35.00%h"
+                app:layout_widthPercent="49.86%w"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/album_text_selector" />
+
+            <TextView
+                android:id="@+id/tv_ok1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/v01"
+                app:layout_textSizePercent="35.00%h"
+                app:layout_widthPercent="49.86%w"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/album_text_selector" />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/tv_cancle1"
+                android:layout_toLeftOf="@id/tv_ok1"
+                android:layout_toRightOf="@id/tv_cancle1"
+                android:layout_toStartOf="@id/tv_ok1"
+                app:layout_marginBottomPercent="-30.29%h"
+                app:layout_marginTopPercent="-30.29%h"
+                android:background="#375A73" />
+        </com.spt.carengine.view.PercentRelativeLayout>
+
+        <com.spt.carengine.view.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/pray_bootom"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/tv_encod1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_heightPercent="25.85%h"
+                app:layout_marginLeftPercent="5.25%w"
+                app:layout_marginTopPercent="8.71%h"
+                app:layout_textSizePercent="22.14%h"
+                android:clickable="true"
+                android:gravity="center|start"
+                android:text="@string/tv_input_encod"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/et_encod"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@id/tv_encod1"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="42.85%h"
+                app:layout_marginTopPercent="10.29%h"
+                app:layout_textSizePercent="22.14%h"
+                app:layout_widthPercent="58.79%w"
+                android:background="@drawable/bt_enter_bg"
+                android:gravity="center"
+                android:inputType="text"
+                android:minLines="1"
+                android:textColor="@color/white" />
+        </com.spt.carengine.view.PercentRelativeLayout>
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+</com.spt.carengine.view.PercentRelativeLayout>

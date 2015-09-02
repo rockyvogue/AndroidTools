@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center_vertical" >
+
+    <com.spt.carengine.datepicker.NumberPicker
+        android:id="@+id/date_year"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="33.50%w"
+        android:background="@drawable/set_time_bg_year" />
+
+    <com.spt.carengine.datepicker.NumberPicker
+        android:id="@+id/date_month"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/date_year"
+        android:layout_toRightOf="@id/date_year"
+        app:layout_marginLeftPercent="2.61%w"
+        app:layout_widthPercent="30.62%w"
+        android:background="@drawable/set_time_bg_date" />
+
+    <com.spt.carengine.datepicker.NumberPicker
+        android:id="@+id/date_day"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/date_month"
+        android:layout_toRightOf="@id/date_month"
+        app:layout_marginLeftPercent="2.61%w"
+        app:layout_widthPercent="30.62%w"
+        android:background="@drawable/set_time_bg_date"
+        android:clickable="true"
+        android:focusable="true" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

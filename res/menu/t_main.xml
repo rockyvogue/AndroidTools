@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.testview.MainActivity" >
+
+    <item
+        android:id="@+id/action_dir"
+        android:title="@string/str_app_dir"
+        />
+    
+     <item
+        android:id="@+id/action_radio"
+        android:title="@string/str_radio"
+        />
+     
+      <item
+        android:id="@+id/action_bluetooch"
+        android:title="@string/str_bluetooth"
+        
+        />
+      
+       <item
+        android:id="@+id/action_car_rec"
+        android:title="@string/str_car_recode"
+        />
+       
+        <item
+        android:id="@+id/action_dog"
+        android:title="@string/str_car_dog"
+        />
+        
+        <item
+        android:id="@+id/action_nav"
+        android:title="@string/str_nav"
+        />
+        
+        <item
+        android:id="@+id/action_setting"
+        android:title="@string/str_setting"
+        />
+        
+        <item
+        android:id="@+id/action_custom_app"
+        android:title="@string/str_custom_app"
+        />
+
+</menu>

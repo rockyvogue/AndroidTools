@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spt.carengine.btcall.BtMainFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <FrameLayout
+            android:id="@+id/fl_fragment_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/bottomList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@drawable/home_btn_bg_d"
+            android:orientation="horizontal" >
+
+            <com.spt.carengine.view.PercentLinearLayout
+                android:id="@+id/ll_dial_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ib_Dial"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="72%h"
+                    app:layout_widthPercent="84%h"
+                    android:checked="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/style_navigation_radio_phone" />
+            </com.spt.carengine.view.PercentLinearLayout>
+
+            <com.spt.carengine.view.PercentLinearLayout
+                android:id="@+id/ll_contact_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ib_Contact"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="72%h"
+                    app:layout_widthPercent="84%h"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/style_navigation_radio_contact" />
+            </com.spt.carengine.view.PercentLinearLayout>
+
+            <com.spt.carengine.view.PercentLinearLayout
+                android:id="@+id/ll_log_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ib_Log"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="72%h"
+                    app:layout_widthPercent="84%h"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/style_navigation_radio_log" />
+            </com.spt.carengine.view.PercentLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

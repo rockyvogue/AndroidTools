@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false" 
+    android:background="@color/explore_video_bg_color">
+
+    <include
+        android:id="@+id/traffic_return_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="18.26%h"
+        layout="@layout/return_bar" />
+
+    <com.spt.carengine.view.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/traffic_return_bar" >
+
+        <TextView
+            android:id="@+id/traffic_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_textSizePercent="8.93%h"
+            android:text="@string/traffic_use" />
+    </com.spt.carengine.view.PercentRelativeLayout>
+
+</com.spt.carengine.view.PercentRelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spt.carengine.view.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/home_nav"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="30.43%h"
+        app:layout_marginLeftPercent="1.99%w"
+        app:layout_widthPercent="57.29%w"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_nav" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_nav"
+        android:layout_alignTop="@id/home_nav"
+        app:layout_marginLeftPercent="30.72%w"
+        app:layout_marginTopPercent="11.56%h"
+        app:layout_textSizePercent="7.3%h"
+        android:text="@string/home_nav"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/home_number"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@id/home_nav"
+        app:layout_heightPercent="30.43%h"
+        app:layout_marginLeftPercent="1.99%w"
+        app:layout_widthPercent="38.2%w"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_number"
+        android:layout_alignTop="@id/home_number"
+        app:layout_marginLeftPercent="21.07%w"
+        app:layout_marginTopPercent="11.56%h"
+        app:layout_textSizePercent="7.3%h"
+        android:text="@string/home_number"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/home_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/home_nav"
+        app:layout_heightPercent="30.43%h"
+        app:layout_marginLeftPercent="1.99%w"
+        app:layout_marginTopPercent="3.04%h"
+        app:layout_widthPercent="31.17%w"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_photo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_photo"
+        android:layout_alignTop="@id/home_photo"
+        app:layout_marginLeftPercent="17.93%w"
+        app:layout_marginTopPercent="11.56%h"
+        app:layout_textSizePercent="7.3%h"
+        android:text="@string/home_photo"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/home_video"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/home_nav"
+        android:layout_toRightOf="@id/home_photo"
+        app:layout_heightPercent="30.43%h"
+        app:layout_marginLeftPercent="1.99%w"
+        app:layout_marginTopPercent="3.04%h"
+        app:layout_widthPercent="31.17%w"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_video" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_video"
+        android:layout_alignTop="@id/home_video"
+        app:layout_marginLeftPercent="17.14%w"
+        app:layout_marginTopPercent="11.56%h"
+        app:layout_textSizePercent="7.3%h"
+        android:text="@string/home_video"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/home_amusement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/home_nav"
+        android:layout_toRightOf="@id/home_video"
+        app:layout_heightPercent="30.43%h"
+        app:layout_marginLeftPercent="1.99%w"
+        app:layout_marginTopPercent="3.04%h"
+        app:layout_widthPercent="31.17%w"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_amusement" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_amusement"
+        android:layout_alignTop="@id/home_amusement"
+        app:layout_marginLeftPercent="17.28%w"
+        app:layout_marginTopPercent="11.56%h"
+        app:layout_textSizePercent="7.3%h"
+        android:text="@string/home_amusement"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/home_car_record"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/home_photo"
+        app:layout_heightPercent="30.43%h"
+        app:layout_marginLeftPercent="1.99%w"
+        app:layout_marginTopPercent="3.04%h"
+        app:layout_widthPercent="57.29%w"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_car_record" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_car_record"
+        android:layout_alignTop="@id/home_car_record"
+        app:layout_marginLeftPercent="26.83%w"
+        app:layout_marginTopPercent="11.56%h"
+        app:layout_textSizePercent="7.3%h"
+        android:text="@string/home_car_record"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/home_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/home_photo"
+        android:layout_toRightOf="@id/home_car_record"
+        app:layout_heightPercent="30.43%h"
+        app:layout_marginLeftPercent="1.99%w"
+        app:layout_marginTopPercent="3.04%h"
+        app:layout_widthPercent="38.2%w"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_user" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_user"
+        android:layout_alignTop="@id/home_user"
+        app:layout_marginLeftPercent="16.49%w"
+        app:layout_marginTopPercent="11.56%h"
+        app:layout_textSizePercent="7.3%h"
+        android:text="@string/home_user"
+        android:textColor="#ffffff" />
+
+</com.spt.carengine.view.PercentRelativeLayout>

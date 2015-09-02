@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <SeekBar
+        android:id="@+id/fm_send_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@id/imageView2"
+        android:layout_alignRight="@id/imageView2"
+        android:layout_weight="1"
+        android:max="2050"
+        android:maxHeight="0.01dip"
+        android:minHeight="0.01dip"
+        android:progress="0"
+        android:thumb="@drawable/fm_seekbar_thumb" />
+
+</LinearLayout>
